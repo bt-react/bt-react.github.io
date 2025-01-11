@@ -1,927 +1,927 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://bt-react.github.io/</loc>
+         <loc>https://bt-react.github.io/index.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/blog/</loc>
+         <loc>https://bt-react.github.io/blog/index.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/blog/2024/06/02/advanced-tips-tricks-antd-design-table/</loc>
+         <loc>https://bt-react.github.io/blog/2024/06/02/advanced-tips-tricks-antd-design-table.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/blog/2024/08/12/api-call-in-parent-or-child/</loc>
+         <loc>https://bt-react.github.io/blog/2024/08/12/api-call-in-parent-or-child.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/blog/2024/05/16/application-structure-for-reactjs/</loc>
+         <loc>https://bt-react.github.io/blog/2024/05/16/application-structure-for-reactjs.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/blog/2024/08/20/best-folder-structure-in-redux-toolkit/</loc>
+         <loc>https://bt-react.github.io/blog/2024/08/20/best-folder-structure-in-redux-toolkit.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/blog/2024/01/22/how-to-check-the-react-version-in-your-project/</loc>
+         <loc>https://bt-react.github.io/blog/2024/01/22/how-to-check-the-react-version-in-your-project.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/blog/2024/05/11/checking-nodejs-versions-in-react-projects/</loc>
+         <loc>https://bt-react.github.io/blog/2024/05/11/checking-nodejs-versions-in-react-projects.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/blog/2024/08/05/choosing-between-function-declarations-and-arrow-functions-for-react-components/</loc>
+         <loc>https://bt-react.github.io/blog/2024/08/05/choosing-between-function-declarations-and-arrow-functions-for-react-components.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/blog/2024/08/21/combine-slices-in-a-feature-folder/</loc>
+         <loc>https://bt-react.github.io/blog/2024/08/21/combine-slices-in-a-feature-folder.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/blog/2024/05/27/conditional-rendering-in-react/</loc>
+         <loc>https://bt-react.github.io/blog/2024/05/27/conditional-rendering-in-react.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/blog/2024/08/11/conditinally-mounting-component/</loc>
+         <loc>https://bt-react.github.io/blog/2024/08/11/conditinally-mounting-component.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/blog/2024/08/18/what-are-the-main-differences-between-redux-thunk-and-redux-saga-and-which-one-should-i-use-and-why/</loc>
+         <loc>https://bt-react.github.io/blog/2024/08/18/what-are-the-main-differences-between-redux-thunk-and-redux-saga-and-which-one-should-i-use-and-why.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/blog/2024/08/19/do-we-need-to-install-redux-thunk-separately-when-using-redux-toolkit/</loc>
+         <loc>https://bt-react.github.io/blog/2024/08/19/do-we-need-to-install-redux-thunk-separately-when-using-redux-toolkit.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/blog/2024/05/18/understanding-eitemprops-in-react-and-ant-designs-menu-component/</loc>
+         <loc>https://bt-react.github.io/blog/2024/05/18/understanding-eitemprops-in-react-and-ant-designs-menu-component.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/blog/2024/08/13/a-comparative-guide-to-lodash-and-javascript/</loc>
+         <loc>https://bt-react.github.io/blog/2024/08/13/a-comparative-guide-to-lodash-and-javascript.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/blog/2024/08/16/libraries-for-immutable-data-structure-in-react/</loc>
+         <loc>https://bt-react.github.io/blog/2024/08/16/libraries-for-immutable-data-structure-in-react.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/blog/2024/08/16/difference-between-mutable-and-immutable-data-in-react/</loc>
+         <loc>https://bt-react.github.io/blog/2024/08/16/difference-between-mutable-and-immutable-data-in-react.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/blog/2024/05/28/order-of-operations-in-ant-design-forms-ensuring-proper-form-resetting/</loc>
+         <loc>https://bt-react.github.io/blog/2024/05/28/order-of-operations-in-ant-design-forms-ensuring-proper-form-resetting.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/blog/2024/08/17/predefined-functions-in-redux-toolkit/</loc>
+         <loc>https://bt-react.github.io/blog/2024/08/17/predefined-functions-in-redux-toolkit.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/blog/2024/01/18/react-router-v6-guide/</loc>
+         <loc>https://bt-react.github.io/blog/2024/01/18/react-router-v6-guide.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/blog/2024/08/23/the-role-of-reducers-in-async-logic/</loc>
+         <loc>https://bt-react.github.io/blog/2024/08/23/the-role-of-reducers-in-async-logic.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/blog/2024/05/19/saving-base64-data-into-an-excel-file-in-a-react-application/</loc>
+         <loc>https://bt-react.github.io/blog/2024/05/19/saving-base64-data-into-an-excel-file-in-a-react-application.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/blog/2024/04/23/formsetfieldsvalue-vs-defaultvalue-in-react/</loc>
+         <loc>https://bt-react.github.io/blog/2024/04/23/formsetfieldsvalue-vs-defaultvalue-in-react.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/blog/2024/08/24/simplifying-error-management-in-react-a-deep-dive-into-component-decomposition/</loc>
+         <loc>https://bt-react.github.io/blog/2024/08/24/simplifying-error-management-in-react-a-deep-dive-into-component-decomposition.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/blog/2024/08/25/understanding-the-importance-of-rowkey-in-react-tables/</loc>
+         <loc>https://bt-react.github.io/blog/2024/08/25/understanding-the-importance-of-rowkey-in-react-tables.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/blog/2024/05/24/useful-react-libraries-for-projects/</loc>
+         <loc>https://bt-react.github.io/blog/2024/05/24/useful-react-libraries-for-projects.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/blog/2024/08/14/using-immer-with-standard-redux/</loc>
+         <loc>https://bt-react.github.io/blog/2024/08/14/using-immer-with-standard-redux.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/blog/2024/08/07/where-does-redux-shines/</loc>
+         <loc>https://bt-react.github.io/blog/2024/08/07/where-does-redux-shines.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/blog/2024/08/22/where-to-store-api-calls-in-redux-toolkit/</loc>
+         <loc>https://bt-react.github.io/blog/2024/08/22/where-to-store-api-calls-in-redux-toolkit.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/blog/2024/08/15/write-cleaner-reducers-with-immer/</loc>
+         <loc>https://bt-react.github.io/blog/2024/08/15/write-cleaner-reducers-with-immer.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/package/barrel/</loc>
+         <loc>https://bt-react.github.io/package/barrel.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/package/intro/</loc>
+         <loc>https://bt-react.github.io/package/intro.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/package/antd/</loc>
+         <loc>https://bt-react.github.io/package/antd/index.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/package/antd/antd-autofill-input-issue/</loc>
+         <loc>https://bt-react.github.io/package/antd/antd-autofill-input-issue.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/package/antd/antd-configprovider/</loc>
+         <loc>https://bt-react.github.io/package/antd/antd-configprovider.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/package/antd/antd-render-func/</loc>
+         <loc>https://bt-react.github.io/package/antd/antd-render-func.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/package/antd/controlled-components/</loc>
+         <loc>https://bt-react.github.io/package/antd/controlled-components.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/package/antd/topic/</loc>
+         <loc>https://bt-react.github.io/package/antd/topic.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/package/antd/twoTone-color/</loc>
+         <loc>https://bt-react.github.io/package/antd/twoTone-color.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/package/antd/form/antd-form-validator/</loc>
+         <loc>https://bt-react.github.io/package/antd/form/antd-form-validator.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/package/antd/form/antd-form/</loc>
+         <loc>https://bt-react.github.io/package/antd/form/antd-form.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/package/antd/form/form-crud/</loc>
+         <loc>https://bt-react.github.io/package/antd/form/form-crud.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/package/antd/form/intro/</loc>
+         <loc>https://bt-react.github.io/package/antd/form/intro.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/package/antd/sidebar/intro/</loc>
+         <loc>https://bt-react.github.io/package/antd/sidebar/intro.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/package/antd/table/filters/</loc>
+         <loc>https://bt-react.github.io/package/antd/table/filters.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/package/axios/axios-interceptors/</loc>
+         <loc>https://bt-react.github.io/package/axios/axios-interceptors.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/package/axios/intro/</loc>
+         <loc>https://bt-react.github.io/package/axios/intro.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/package/axios/sentry/</loc>
+         <loc>https://bt-react.github.io/package/axios/sentry.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/package/axios/topic/</loc>
+         <loc>https://bt-react.github.io/package/axios/topic.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/package/composition/imagegallery/</loc>
+         <loc>https://bt-react.github.io/package/composition/imagegallery.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/package/composition/intro/</loc>
+         <loc>https://bt-react.github.io/package/composition/intro.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/package/lodash/debounce/</loc>
+         <loc>https://bt-react.github.io/package/lodash/debounce.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/package/monitoring-and-logging/intro/</loc>
+         <loc>https://bt-react.github.io/package/monitoring-and-logging/intro.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/package/monitoring-and-logging/logging-libraries/</loc>
+         <loc>https://bt-react.github.io/package/monitoring-and-logging/logging-libraries.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/package/monitoring-and-logging/pino/example/</loc>
+         <loc>https://bt-react.github.io/package/monitoring-and-logging/pino/example.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/package/monitoring-and-logging/pino/intro/</loc>
+         <loc>https://bt-react.github.io/package/monitoring-and-logging/pino/intro.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/package/monitoring-and-logging/pino/methods/</loc>
+         <loc>https://bt-react.github.io/package/monitoring-and-logging/pino/methods.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/package/monitoring-and-logging/pino/notes/</loc>
+         <loc>https://bt-react.github.io/package/monitoring-and-logging/pino/notes.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/package/monitoring-and-logging/pino/send-to-api/</loc>
+         <loc>https://bt-react.github.io/package/monitoring-and-logging/pino/send-to-api.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/package/monitoring-and-logging/pino/simple-usage/</loc>
+         <loc>https://bt-react.github.io/package/monitoring-and-logging/pino/simple-usage.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/package/react-infinite-scroll-component/</loc>
+         <loc>https://bt-react.github.io/package/react-infinite-scroll-component/index.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/package/react-infinite-scroll-component/resuable/</loc>
+         <loc>https://bt-react.github.io/package/react-infinite-scroll-component/resuable.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/package/tinymce/tinymce/</loc>
+         <loc>https://bt-react.github.io/package/tinymce/tinymce.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/intro/</loc>
+         <loc>https://bt-react.github.io/react/intro.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/philosophy/</loc>
+         <loc>https://bt-react.github.io/react/philosophy.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/example/breaking-react-component-pattern/</loc>
+         <loc>https://bt-react.github.io/react/example/breaking-react-component-pattern.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/example/children-prop/</loc>
+         <loc>https://bt-react.github.io/react/example/children-prop.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/example/component-composition/</loc>
+         <loc>https://bt-react.github.io/react/example/component-composition.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/example/hoc/</loc>
+         <loc>https://bt-react.github.io/react/example/hoc.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/example/lifting-state-up/</loc>
+         <loc>https://bt-react.github.io/react/example/lifting-state-up.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/example/passing-props/</loc>
+         <loc>https://bt-react.github.io/react/example/passing-props.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/example/presentational-and-container/</loc>
+         <loc>https://bt-react.github.io/react/example/presentational-and-container.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/example/prop-drilling/</loc>
+         <loc>https://bt-react.github.io/react/example/prop-drilling.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/example/render-props/</loc>
+         <loc>https://bt-react.github.io/react/example/render-props.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/fake-api/intro/</loc>
+         <loc>https://bt-react.github.io/react/fake-api/intro.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/fake-api/json-server/</loc>
+         <loc>https://bt-react.github.io/react/fake-api/json-server.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/fake-api/topic/</loc>
+         <loc>https://bt-react.github.io/react/fake-api/topic.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/fake-api/msw/msw-version/</loc>
+         <loc>https://bt-react.github.io/react/fake-api/msw/msw-version.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/fake-api/msw/msw/</loc>
+         <loc>https://bt-react.github.io/react/fake-api/msw/msw.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/folder-structure/feature-based-pattern/</loc>
+         <loc>https://bt-react.github.io/react/folder-structure/feature-based-pattern.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/folder-structure/intro/</loc>
+         <loc>https://bt-react.github.io/react/folder-structure/intro.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/folder-structure/react-architecture/</loc>
+         <loc>https://bt-react.github.io/react/folder-structure/react-architecture.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/hooks/React.memo-syntax/</loc>
+         <loc>https://bt-react.github.io/react/hooks/React.memo-syntax.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/hooks/React.memo-vs-useMemo/</loc>
+         <loc>https://bt-react.github.io/react/hooks/React.memo-vs-useMemo.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/hooks/React.memo/</loc>
+         <loc>https://bt-react.github.io/react/hooks/React.memo.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/hooks/guides/</loc>
+         <loc>https://bt-react.github.io/react/hooks/guides.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/hooks/migrating-cra-vite/</loc>
+         <loc>https://bt-react.github.io/react/hooks/migrating-cra-vite.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/hooks/react-context-api/</loc>
+         <loc>https://bt-react.github.io/react/hooks/react-context-api.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/hooks/react-router/</loc>
+         <loc>https://bt-react.github.io/react/hooks/react-router.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/hooks/useCallback/</loc>
+         <loc>https://bt-react.github.io/react/hooks/useCallback.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/hooks/useEffect-cleanup/</loc>
+         <loc>https://bt-react.github.io/react/hooks/useEffect-cleanup.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/hooks/useEffect-technique-used/</loc>
+         <loc>https://bt-react.github.io/react/hooks/useEffect-technique-used.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/hooks/useEffect-technique/</loc>
+         <loc>https://bt-react.github.io/react/hooks/useEffect-technique.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/hooks/useReducer-and-reducer/</loc>
+         <loc>https://bt-react.github.io/react/hooks/useReducer-and-reducer.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/hooks/useReducer-example/</loc>
+         <loc>https://bt-react.github.io/react/hooks/useReducer-example.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/hooks/useReducer-with-api/</loc>
+         <loc>https://bt-react.github.io/react/hooks/useReducer-with-api.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/hooks/useReducer/</loc>
+         <loc>https://bt-react.github.io/react/hooks/useReducer.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/hooks/useRef/</loc>
+         <loc>https://bt-react.github.io/react/hooks/useRef.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/miscellaneous/books/</loc>
+         <loc>https://bt-react.github.io/react/miscellaneous/books.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/miscellaneous/handling-side-effects/</loc>
+         <loc>https://bt-react.github.io/react/miscellaneous/handling-side-effects.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/miscellaneous/namespace-import/</loc>
+         <loc>https://bt-react.github.io/react/miscellaneous/namespace-import.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/miscellaneous/react-depth/</loc>
+         <loc>https://bt-react.github.io/react/miscellaneous/react-depth.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/optimization/code-splitting/</loc>
+         <loc>https://bt-react.github.io/react/optimization/code-splitting.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/optimization/error-boundaries/</loc>
+         <loc>https://bt-react.github.io/react/optimization/error-boundaries.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/optimization/intro/</loc>
+         <loc>https://bt-react.github.io/react/optimization/intro.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/optimization/react-suspense/</loc>
+         <loc>https://bt-react.github.io/react/optimization/react-suspense.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/optimization/topic/</loc>
+         <loc>https://bt-react.github.io/react/optimization/topic.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/pattern/antipattern/</loc>
+         <loc>https://bt-react.github.io/react/pattern/antipattern.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/pattern/compound-pattern/</loc>
+         <loc>https://bt-react.github.io/react/pattern/compound-pattern.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/pattern/container-presentational-patterns/</loc>
+         <loc>https://bt-react.github.io/react/pattern/container-presentational-patterns.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/pattern/function-as-child/</loc>
+         <loc>https://bt-react.github.io/react/pattern/function-as-child.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/pattern/hoc-pattern/</loc>
+         <loc>https://bt-react.github.io/react/pattern/hoc-pattern.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/pattern/misc/</loc>
+         <loc>https://bt-react.github.io/react/pattern/misc.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/pattern/react-pattern-intro/</loc>
+         <loc>https://bt-react.github.io/react/pattern/react-pattern-intro.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/testing/cypress/</loc>
+         <loc>https://bt-react.github.io/react/testing/cypress.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/testing/intro/</loc>
+         <loc>https://bt-react.github.io/react/testing/intro.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/testing/jest/</loc>
+         <loc>https://bt-react.github.io/react/testing/jest.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/testing/measuring-optimization-tools/</loc>
+         <loc>https://bt-react.github.io/react/testing/measuring-optimization-tools.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/testing/codereport/bugs/cleanup-function/</loc>
+         <loc>https://bt-react.github.io/react/testing/codereport/bugs/cleanup-function.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/testing/codereport/bugs/debouncing/</loc>
+         <loc>https://bt-react.github.io/react/testing/codereport/bugs/debouncing.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/testing/codereport/bugs/intro/</loc>
+         <loc>https://bt-react.github.io/react/testing/codereport/bugs/intro.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/testing/codereport/bugs/master-topic/</loc>
+         <loc>https://bt-react.github.io/react/testing/codereport/bugs/master-topic.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/testing/codereport/bugs/solution/</loc>
+         <loc>https://bt-react.github.io/react/testing/codereport/bugs/solution.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/topic/abort-controller-solved/</loc>
+         <loc>https://bt-react.github.io/react/topic/abort-controller-solved.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/topic/cleanup/</loc>
+         <loc>https://bt-react.github.io/react/topic/cleanup.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/topic/code-for-change/</loc>
+         <loc>https://bt-react.github.io/react/topic/code-for-change.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/topic/react-strict-mode/</loc>
+         <loc>https://bt-react.github.io/react/topic/react-strict-mode.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/topic/slides/</loc>
+         <loc>https://bt-react.github.io/react/topic/slides.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/topic/mastering/batching-react/</loc>
+         <loc>https://bt-react.github.io/react/topic/mastering/batching-react.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/topic/mastering/batching-stale-state/</loc>
+         <loc>https://bt-react.github.io/react/topic/mastering/batching-stale-state.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/topic/mastering/component-re-rendering/</loc>
+         <loc>https://bt-react.github.io/react/topic/mastering/component-re-rendering.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/topic/mastering/explainingothers/</loc>
+         <loc>https://bt-react.github.io/react/topic/mastering/explainingothers.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/topic/mastering/function-declaration-and-expression/</loc>
+         <loc>https://bt-react.github.io/react/topic/mastering/function-declaration-and-expression.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/topic/mastering/hooks-mastering-topic/</loc>
+         <loc>https://bt-react.github.io/react/topic/mastering/hooks-mastering-topic.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/topic/mastering/one-most-important-in-react/</loc>
+         <loc>https://bt-react.github.io/react/topic/mastering/one-most-important-in-react.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/topic/mastering/shallow-comparison/</loc>
+         <loc>https://bt-react.github.io/react/topic/mastering/shallow-comparison.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/react/topic/mastering/state-immutability/</loc>
+         <loc>https://bt-react.github.io/react/topic/mastering/state-immutability.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/router/intro/</loc>
+         <loc>https://bt-react.github.io/router/intro.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/router/docs/auth-techniques/</loc>
+         <loc>https://bt-react.github.io/router/docs/auth-techniques.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/router/docs/best-method-for-auth/</loc>
+         <loc>https://bt-react.github.io/router/docs/best-method-for-auth.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/router/docs/not-found-component/</loc>
+         <loc>https://bt-react.github.io/router/docs/not-found-component.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/router/docs/react-router/</loc>
+         <loc>https://bt-react.github.io/router/docs/react-router.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/router/docs/router-version/</loc>
+         <loc>https://bt-react.github.io/router/docs/router-version.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/router/docs/routing/</loc>
+         <loc>https://bt-react.github.io/router/docs/routing.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/router/docs/why-react-router/</loc>
+         <loc>https://bt-react.github.io/router/docs/why-react-router.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/router/example/context-auth/</loc>
+         <loc>https://bt-react.github.io/router/example/context-auth.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/router/example/simple-login/</loc>
+         <loc>https://bt-react.github.io/router/example/simple-login.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/router/example/antd/active-link/</loc>
+         <loc>https://bt-react.github.io/router/example/antd/active-link.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/router/example/antd/intro/</loc>
+         <loc>https://bt-react.github.io/router/example/antd/intro.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/router/example/antd/key-and-label/</loc>
+         <loc>https://bt-react.github.io/router/example/antd/key-and-label.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/router/question/pervent-layout-flashing-v6/</loc>
+         <loc>https://bt-react.github.io/router/question/pervent-layout-flashing-v6.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/router/types/types-of-access-control-routes/</loc>
+         <loc>https://bt-react.github.io/router/types/types-of-access-control-routes.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/router/types/types-of-router/</loc>
+         <loc>https://bt-react.github.io/router/types/types-of-router.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/router/version/v6/</loc>
+         <loc>https://bt-react.github.io/router/version/v6.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/intro/</loc>
+         <loc>https://bt-react.github.io/state-management/intro.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/jwt-verification-clientside/</loc>
+         <loc>https://bt-react.github.io/state-management/jwt-verification-clientside.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/middleware/</loc>
+         <loc>https://bt-react.github.io/state-management/middleware/index.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/mobx/intro/</loc>
+         <loc>https://bt-react.github.io/state-management/mobx/intro.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/recoil/intro/</loc>
+         <loc>https://bt-react.github.io/state-management/recoil/intro.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/redux/intro/</loc>
+         <loc>https://bt-react.github.io/state-management/redux/intro.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/redux/react-redux/</loc>
+         <loc>https://bt-react.github.io/state-management/redux/react-redux.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/redux/core/folder-structure/</loc>
+         <loc>https://bt-react.github.io/state-management/redux/core/folder-structure.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/redux/core/redux-pattern/</loc>
+         <loc>https://bt-react.github.io/state-management/redux/core/redux-pattern.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/redux/core/redux-testing/</loc>
+         <loc>https://bt-react.github.io/state-management/redux/core/redux-testing.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/redux/core/action/intro/</loc>
+         <loc>https://bt-react.github.io/state-management/redux/core/action/intro.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/redux/core/reducer/example/</loc>
+         <loc>https://bt-react.github.io/state-management/redux/core/reducer/example.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/redux/core/reducer/intro/</loc>
+         <loc>https://bt-react.github.io/state-management/redux/core/reducer/intro.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/redux/core/reducer/modular-reducer/</loc>
+         <loc>https://bt-react.github.io/state-management/redux/core/reducer/modular-reducer.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/redux/core/reducer/throw-new-error/</loc>
+         <loc>https://bt-react.github.io/state-management/redux/core/reducer/throw-new-error.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/redux/core/redux-middleware/intro/</loc>
+         <loc>https://bt-react.github.io/state-management/redux/core/redux-middleware/intro.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/redux/core/redux-middleware/redux-saga/</loc>
+         <loc>https://bt-react.github.io/state-management/redux/core/redux-middleware/redux-saga.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/redux/core/redux-middleware/redux-thunk/</loc>
+         <loc>https://bt-react.github.io/state-management/redux/core/redux-middleware/redux-thunk.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/redux/persist/example/</loc>
+         <loc>https://bt-react.github.io/state-management/redux/persist/example.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/redux/persist/immer-example/</loc>
+         <loc>https://bt-react.github.io/state-management/redux/persist/immer-example.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/redux/persist/question/</loc>
+         <loc>https://bt-react.github.io/state-management/redux/persist/question.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/redux/persist/redux-persist-purge/</loc>
+         <loc>https://bt-react.github.io/state-management/redux/persist/redux-persist-purge.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/redux/persist/redux-persist/</loc>
+         <loc>https://bt-react.github.io/state-management/redux/persist/redux-persist.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/redux/persist/redux-store-subscribe/</loc>
+         <loc>https://bt-react.github.io/state-management/redux/persist/redux-store-subscribe.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/redux/persist/reduxtoolkit-and-rtkquery/</loc>
+         <loc>https://bt-react.github.io/state-management/redux/persist/reduxtoolkit-and-rtkquery.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/redux/rtk/core-vs-query/</loc>
+         <loc>https://bt-react.github.io/state-management/redux/rtk/core-vs-query.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/redux/rtk/intro/</loc>
+         <loc>https://bt-react.github.io/state-management/redux/rtk/intro.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/redux/rtk/query/anatomy-of-rtkquery/</loc>
+         <loc>https://bt-react.github.io/state-management/redux/rtk/query/anatomy-of-rtkquery.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/redux/rtk/query/intro/</loc>
+         <loc>https://bt-react.github.io/state-management/redux/rtk/query/intro.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/redux/rtk/query/mnemonic/</loc>
+         <loc>https://bt-react.github.io/state-management/redux/rtk/query/mnemonic.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/redux/rtk/query/rtkadvanced/</loc>
+         <loc>https://bt-react.github.io/state-management/redux/rtk/query/rtkadvanced.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/redux/rtk/query/tools/</loc>
+         <loc>https://bt-react.github.io/state-management/redux/rtk/query/tools.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/redux/rtk/query/topic/</loc>
+         <loc>https://bt-react.github.io/state-management/redux/rtk/query/topic.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/redux/rtk/toolkit/code-modularity/</loc>
+         <loc>https://bt-react.github.io/state-management/redux/rtk/toolkit/code-modularity.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/redux/rtk/toolkit/folder-structure/</loc>
+         <loc>https://bt-react.github.io/state-management/redux/rtk/toolkit/folder-structure.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/redux/rtk/toolkit/intro/</loc>
+         <loc>https://bt-react.github.io/state-management/redux/rtk/toolkit/intro.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/redux/rtk/toolkit/topic/</loc>
+         <loc>https://bt-react.github.io/state-management/redux/rtk/toolkit/topic.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/redux/rtk/toolkit/ultimate/</loc>
+         <loc>https://bt-react.github.io/state-management/redux/rtk/toolkit/ultimate.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/redux/rtk/toolkit/example/example/</loc>
+         <loc>https://bt-react.github.io/state-management/redux/rtk/toolkit/example/example.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/redux/rtk/toolkit/middleware/intro/</loc>
+         <loc>https://bt-react.github.io/state-management/redux/rtk/toolkit/middleware/intro.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/redux/rtk/toolkit/middleware/setup/</loc>
+         <loc>https://bt-react.github.io/state-management/redux/rtk/toolkit/middleware/setup.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/redux/rtk/toolkit/questions/a.how-to-right-question/</loc>
+         <loc>https://bt-react.github.io/state-management/redux/rtk/toolkit/questions/a.how-to-right-question.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/redux/rtk/toolkit/questions/how-action-types-are-managed-in-redux-toolkit/</loc>
+         <loc>https://bt-react.github.io/state-management/redux/rtk/toolkit/questions/how-action-types-are-managed-in-redux-toolkit.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/redux/rtk/toolkit/questions/how-does-redux-toolkit-use-default-thunk/</loc>
+         <loc>https://bt-react.github.io/state-management/redux/rtk/toolkit/questions/how-does-redux-toolkit-use-default-thunk.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/redux/rtk/toolkit/questions/is-it-mandatory-to-use-createasyncthunk-for-api-calls/</loc>
+         <loc>https://bt-react.github.io/state-management/redux/rtk/toolkit/questions/is-it-mandatory-to-use-createasyncthunk-for-api-calls.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/redux/rtk/toolkit/questions/should-api-calls-be-in-same-file/</loc>
+         <loc>https://bt-react.github.io/state-management/redux/rtk/toolkit/questions/should-api-calls-be-in-same-file.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/redux/rtk/toolkit/questions/what-are-thunk-action-creators/</loc>
+         <loc>https://bt-react.github.io/state-management/redux/rtk/toolkit/questions/what-are-thunk-action-creators.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/redux/rtk/toolkit/questions/where-do-we-define-action/</loc>
+         <loc>https://bt-react.github.io/state-management/redux/rtk/toolkit/questions/where-do-we-define-action.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/redux/rtk/toolkit/questions/why-does-redux-toolkit-combine/</loc>
+         <loc>https://bt-react.github.io/state-management/redux/rtk/toolkit/questions/why-does-redux-toolkit-combine.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/redux/standard-redux/intro/</loc>
+         <loc>https://bt-react.github.io/state-management/redux/standard-redux/intro.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/rtkquery/intro/</loc>
+         <loc>https://bt-react.github.io/state-management/rtkquery/intro.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/rtkquery/rtk-post-put-mutation/</loc>
+         <loc>https://bt-react.github.io/state-management/rtkquery/rtk-post-put-mutation.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/rtkquery/rtk-query-header/</loc>
+         <loc>https://bt-react.github.io/state-management/rtkquery/rtk-query-header.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/rtkquery/rtk-transform/</loc>
+         <loc>https://bt-react.github.io/state-management/rtkquery/rtk-transform.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/rtkquery/rtk-vs-tanstack/</loc>
+         <loc>https://bt-react.github.io/state-management/rtkquery/rtk-vs-tanstack.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/rtkquery/hooks/notification-approach-rtk/</loc>
+         <loc>https://bt-react.github.io/state-management/rtkquery/hooks/notification-approach-rtk.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/rtkquery/hooks/rtk-lifecycle-hooks/</loc>
+         <loc>https://bt-react.github.io/state-management/rtkquery/hooks/rtk-lifecycle-hooks.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/rtkquery/hooks/rtk-query-hooks/</loc>
+         <loc>https://bt-react.github.io/state-management/rtkquery/hooks/rtk-query-hooks.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/rtkquery/hooks/rtk-skip-option/</loc>
+         <loc>https://bt-react.github.io/state-management/rtkquery/hooks/rtk-skip-option.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/rtkquery/hooks/tanStack-query/</loc>
+         <loc>https://bt-react.github.io/state-management/rtkquery/hooks/tanStack-query.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/rtkquery/official-docs/advanced/</loc>
+         <loc>https://bt-react.github.io/state-management/rtkquery/official-docs/advanced.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/rtkquery/official-docs/basic/</loc>
+         <loc>https://bt-react.github.io/state-management/rtkquery/official-docs/basic.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/webstorage/intro/</loc>
+         <loc>https://bt-react.github.io/state-management/webstorage/intro.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/state-management/webstorage/token/</loc>
+         <loc>https://bt-react.github.io/state-management/webstorage/token.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/typescript/core-concept/</loc>
+         <loc>https://bt-react.github.io/typescript/core-concept.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/typescript/one-hour-ts/</loc>
+         <loc>https://bt-react.github.io/typescript/one-hour-ts.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/typescript/typescript-compiler/</loc>
+         <loc>https://bt-react.github.io/typescript/typescript-compiler.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/typescript/typescript-installation/</loc>
+         <loc>https://bt-react.github.io/typescript/typescript-installation.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/typescript/react-fc/example/</loc>
+         <loc>https://bt-react.github.io/typescript/react-fc/example.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/typescript/react-fc/intro/</loc>
+         <loc>https://bt-react.github.io/typescript/react-fc/intro.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/typescript/react-fc/react-fc/</loc>
+         <loc>https://bt-react.github.io/typescript/react-fc/react-fc.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/blog/archive/2024/</loc>
+         <loc>https://bt-react.github.io/blog/archive/2024.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/blog/page/2/</loc>
+         <loc>https://bt-react.github.io/blog/page/2/index.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/blog/page/3/</loc>
+         <loc>https://bt-react.github.io/blog/page/3/index.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/blog/archive/2024/page/2/</loc>
+         <loc>https://bt-react.github.io/blog/archive/2024/page/2.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
     <url>
-         <loc>https://bt-react.github.io/blog/archive/2024/page/3/</loc>
+         <loc>https://bt-react.github.io/blog/archive/2024/page/3.html</loc>
          <lastmod>2025-01-11</lastmod>
     </url>
 </urlset>
