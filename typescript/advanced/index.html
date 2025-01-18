@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://bt-react.github.io/typescript/typescript-compiler/">
+        <link rel="canonical" href="https://bt-react.github.io/typescript/advanced/">
       
       
-        <link rel="prev" href="../typescript-installation/">
+        <link rel="prev" href="../classes/">
       
       
-        <link rel="next" href="../one-hour-ts/">
+        <link rel="next" href="../installation/">
       
       
       <link rel="icon" href="../../assets/logo/react.ico">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Compiler - React Organization</title>
+        <title>Generics and Advanced Topics - React Organization</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#typescript-compiler" class="md-skip">
+        <a href="#additional-pages-eg-advancedmd-resourcesmd" class="md-skip">
           Skip to content
         </a>
       
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Compiler
+              Generics and Advanced Topics
             
           </span>
         </div>
@@ -286,7 +286,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../typescript-installation/" class="md-tabs__link">
+        <a href="../intro/" class="md-tabs__link">
           
   
   Typescript
@@ -5678,11 +5678,74 @@
   
   
     <li class="md-nav__item">
-      <a href="../typescript-installation/" class="md-nav__link">
+      <a href="../intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Installation
+    Intro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../basics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../classes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Classes and Interfaces
   </span>
   
 
@@ -5705,14 +5768,12 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
   <span class="md-ellipsis">
-    Compiler
+    Generics and Advanced Topics
   </span>
   
 
@@ -5723,7 +5784,7 @@
         
   
   <span class="md-ellipsis">
-    Compiler
+    Generics and Advanced Topics
   </span>
   
 
@@ -5735,8 +5796,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -5745,45 +5804,54 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#installing-the-compiler" class="md-nav__link">
+  <a href="#additional-pages-eg-advancedmd-resourcesmd" class="md-nav__link">
     <span class="md-ellipsis">
-      Installing the Compiler
+      Additional Pages (e.g., advanced.md, resources.md)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#globally-installing-typescript" class="md-nav__link">
+  <a href="#generics-in-typescript" class="md-nav__link">
     <span class="md-ellipsis">
-      Globally Installing TypeScript
+      Generics in TypeScript
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuring-the-compiler" class="md-nav__link">
+  <a href="#key-takeaways" class="md-nav__link">
     <span class="md-ellipsis">
-      Configuring the compiler
+      Key Takeaways:
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#working-with-typescript-compatible-transpilers" class="md-nav__link">
+  <a href="#when-to-use" class="md-nav__link">
     <span class="md-ellipsis">
-      Working with TypeScript-compatible transpilers
+      When to Use:
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#reference" class="md-nav__link">
+  <a href="#example-use-case-combining-both" class="md-nav__link">
     <span class="md-ellipsis">
-      Reference
+      Example Use Case: Combining Both
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-naming-conventions-for-generics" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Naming Conventions for Generics
     </span>
   </a>
   
@@ -5793,6 +5861,107 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_6" id="__nav_5_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Setup
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_6">
+            <span class="md-nav__icon md-icon"></span>
+            Setup
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../compiler/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Compiler
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../core-concept/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Core Concept
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -5819,22 +5988,9 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../core-concept/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    core concept
-  </span>
-  
-
-      </a>
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -5857,10 +6013,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_7" >
         
           
-          <label class="md-nav__link" for="__nav_5_5" id="__nav_5_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5_7" id="__nav_5_7_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -5871,8 +6027,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_5">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_7">
             <span class="md-nav__icon md-icon"></span>
             React FC
           </label>
@@ -7217,8 +7373,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -7227,45 +7381,54 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#installing-the-compiler" class="md-nav__link">
+  <a href="#additional-pages-eg-advancedmd-resourcesmd" class="md-nav__link">
     <span class="md-ellipsis">
-      Installing the Compiler
+      Additional Pages (e.g., advanced.md, resources.md)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#globally-installing-typescript" class="md-nav__link">
+  <a href="#generics-in-typescript" class="md-nav__link">
     <span class="md-ellipsis">
-      Globally Installing TypeScript
+      Generics in TypeScript
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuring-the-compiler" class="md-nav__link">
+  <a href="#key-takeaways" class="md-nav__link">
     <span class="md-ellipsis">
-      Configuring the compiler
+      Key Takeaways:
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#working-with-typescript-compatible-transpilers" class="md-nav__link">
+  <a href="#when-to-use" class="md-nav__link">
     <span class="md-ellipsis">
-      Working with TypeScript-compatible transpilers
+      When to Use:
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#reference" class="md-nav__link">
+  <a href="#example-use-case-combining-both" class="md-nav__link">
     <span class="md-ellipsis">
-      Reference
+      Example Use Case: Combining Both
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-naming-conventions-for-generics" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Naming Conventions for Generics
     </span>
   </a>
   
@@ -7286,51 +7449,84 @@
                   
 
 
-<h1 id="typescript-compiler">TypeScript Compiler</h1>
-<p>TypeScript is transpiled into JavaScript using a compiler.</p>
-<blockquote>
-<p>TypeScript being converted into JavaScript means it runs anywhere that JavaScript runs!</p>
-</blockquote>
-<h2 id="installing-the-compiler">Installing the Compiler</h2>
-<p>TypeScript has an official compiler which can be installed through npm.</p>
-<p>Within your npm project, run the following command to install the compiler:</p>
-<blockquote>
-<p>npm install typescript --save-dev</p>
-</blockquote>
-<p>You can then run the TypeScript compiler using one of the following commands:</p>
-<blockquote>
-<p>npx tsc</p>
-<p>yarn tsc</p>
-<p>pnpm tsc</p>
-</blockquote>
-<h2 id="globally-installing-typescript">Globally Installing TypeScript</h2>
-<blockquote>
-<p>npm install -g typescript</p>
-</blockquote>
-<h2 id="configuring-the-compiler">Configuring the compiler</h2>
-<p>You can have TypeScript create <code>tsconfig.json</code> with the recommended settings with:</p>
-<blockquote>
-<p>npx tsc --init</p>
-</blockquote>
-<p>Here is an example of more things you could add to the <code>tsconfig.json</code> file:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>{
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  &quot;include&quot;: [&quot;src&quot;],
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>  &quot;compilerOptions&quot;: {
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    &quot;outDir&quot;: &quot;./build&quot;
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>  }
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>}
-</span></code></pre></div>
-<h2 id="working-with-typescript-compatible-transpilers">Working with TypeScript-compatible transpilers</h2>
-<p>There are other tools which convert TypeScript files to JavaScript files</p>
-<ol>
-<li><strong>Babel:</strong> Babel is a very popular JavaScript transpiler which supports TypeScript files via the plugin @babel/plugin-transform-typescript.</li>
-<li><strong>swc:</strong> swc is a fast transpiler created in Rust which supports many of Babel's features including TypeScript.</li>
-<li><strong>Sucrase:</strong> Sucrase is a Babel fork focused on speed for using in development mode. Sucrase supports TypeScript natively.</li>
-</ol>
-<hr />
-<h2 id="reference">Reference</h2>
+  <h1>Generics and Advanced Topics</h1>
+
+<h4 id="additional-pages-eg-advancedmd-resourcesmd">Additional Pages (e.g., <code>advanced.md</code>, <code>resources.md</code>)</h4>
+<p>You can continue adding intermediate and advanced concepts, such as:</p>
 <ul>
-<li><a href="https://www.w3schools.com/typescript/typescript_getstarted.php">TypeScript Compiler :w3chools.com</a></li>
+<li><strong>Generics</strong></li>
+<li><strong>Interfaces</strong></li>
+<li><strong>Decorators</strong></li>
+<li><strong>TypeScript with Modules</strong></li>
+<li><strong>Advanced Type Inference</strong></li>
+</ul>
+<hr />
+<h2 id="generics-in-typescript">Generics in TypeScript</h2>
+<p>Generics in TypeScript allow you to write functions, classes, or interfaces that work with any data type while still maintaining type safety. Instead of specifying a concrete type (like <code>string</code> or <code>number</code>), generics allow you to use placeholders that will be replaced with specific types when you use the function, class, or interface.</p>
+<p>Think of generics as a way to make your code more <mark>flexible</mark> and <mark>reusable</mark>.</p>
+<details class="example" open="open">
+<summary>Example</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Generic Function Example</label><label for="__tabbed_1_2">Explanation</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-ts highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">identity</span><span class="o">&lt;</span><span class="nx">T</span><span class="o">&gt;</span><span class="p">(</span><span class="nx">arg</span><span class="o">:</span><span class="w"> </span><span class="kt">T</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="nx">T</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">arg</span><span class="p">;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">}</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="kd">let</span><span class="w"> </span><span class="nx">output1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">identity</span><span class="p">(</span><span class="s2">&quot;Hello, world!&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// output1 is of type string</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="kd">let</span><span class="w"> </span><span class="nx">output2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">identity</span><span class="p">(</span><span class="mf">42</span><span class="p">);</span><span class="w"> </span><span class="c1">// output2 is of type number</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<ul>
+<li><code>T</code> is a placeholder that stands for a type that will be determined when the function is called.</li>
+<li>The function <code>identity</code> will accept an argument of any type (<code>T</code>) and return the same type.</li>
+</ul>
+</div>
+</div>
+</div>
+</details>
+<hr />
+<h2 id="key-takeaways">Key Takeaways:</h2>
+<ul>
+<li><strong>Interfaces</strong> <mark>define the structure of objects</mark> and help you enforce that certain properties or methods exist in objects.</li>
+<li><strong>Generics</strong> <mark>allow you to write reusable code that works with different types</mark> without losing type safety.</li>
+</ul>
+<h2 id="when-to-use">When to Use:</h2>
+<ul>
+<li>Use <strong>interfaces</strong> when you want to define the shape or structure of an object or a class, including required properties, methods, and optional ones.</li>
+<li>Use <strong>generics</strong> when you need to write flexible and reusable functions or classes that can operate with any type while maintaining type safety.</li>
+</ul>
+<h2 id="example-use-case-combining-both">Example Use Case: Combining Both</h2>
+<p>Let's say we want to create a function that accepts a list of objects, where each object has a <code>name</code> property, and then returns an array of <code>name</code> values.</p>
+<div class="language-ts highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">interface</span><span class="w"> </span><span class="nx">Named</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="p">}</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="kd">function</span><span class="w"> </span><span class="nx">getNames</span><span class="o">&lt;</span><span class="nx">T</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nx">Named</span><span class="o">&gt;</span><span class="p">(</span><span class="nx">items</span><span class="o">:</span><span class="w"> </span><span class="kt">T</span><span class="p">[])</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">[]</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">items</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">item</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">item</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="p">}</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="kd">const</span><span class="w"> </span><span class="nx">people</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Alice&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="kt">30</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Bob&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="kt">25</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="p">];</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="kd">const</span><span class="w"> </span><span class="nx">names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">getNames</span><span class="p">(</span><span class="nx">people</span><span class="p">);</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">names</span><span class="p">);</span><span class="w"> </span><span class="c1">// Output: [&quot;Alice&quot;, &quot;Bob&quot;]</span>
+</span></code></pre></div>
+<p>In this case:</p>
+<ul>
+<li>We use <strong>interface</strong> <code>Named</code> to specify that the objects should have a name property.</li>
+<li>We use <strong>generics</strong> (<code>T extends Named</code>) to allow the function to work with any array of objects that have a <code>name</code> property.</li>
+</ul>
+<hr />
+<h2 id="general-naming-conventions-for-generics">General Naming Conventions for Generics</h2>
+<ul>
+<li><code>T</code>: Stands for "Type" and is the most common placeholder for a generic type.</li>
+<li><code>K</code>: Often used for <strong>key</strong> types (when working with objects or maps).</li>
+<li><code>V</code>: Often used for <strong>value</strong> types (when working with key-value pairs).</li>
+<li><code>U</code>, <code>P</code>, <code>S</code>, etc.: You can use other letters to represent different types depending on their role.</li>
 </ul>
 
 
@@ -7367,7 +7563,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../typescript-installation/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Installation">
+          <a href="../classes/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Classes and Interfaces">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -7377,20 +7573,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Installation
+                Classes and Interfaces
               </div>
             </div>
           </a>
         
         
           
-          <a href="../one-hour-ts/" class="md-footer__link md-footer__link--next" aria-label="Next: 1 hour">
+          <a href="../installation/" class="md-footer__link md-footer__link--next" aria-label="Next: Installation">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                1 hour
+                Installation
               </div>
             </div>
             <div class="md-footer__button md-icon">
