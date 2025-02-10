@@ -7561,6 +7561,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#hooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hooks
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#react" class="md-nav__link">
     <span class="md-ellipsis">
       React
@@ -7675,6 +7684,34 @@
 </ul>
 <hr />
 <p>React Key Concepts (2022 Packt Publishing) by Maximilian Schwarzmüller</p>
+</li>
+</ol>
+<hr />
+<h2 id="hooks">Hooks</h2>
+<p>At the time of writing, there are 15 built-in hooks in React (as of <code>React 18</code>), which we’ll cover briefly, grouped by their functionality:</p>
+<ul>
+<li>
+<p><strong>Stateful hooks</strong> — These functions are concerned with making components and applications stateful on several different layers and levels of complexity: <code>useState</code>, <code>useReducer</code>, <code>useRef</code>, <code>useContext</code>, <code>useDeferredValue</code>, and <code>useTransition</code>.</p>
+</li>
+<li>
+<p><strong>Effect hooks</strong> — These functions are concerned with running effects inside a component at different stages of the overall component life cycle as well as during each individual render cycle: <code>useEffect</code> and <code>useLayoutEffect</code>.</p>
+</li>
+<li>
+<p><strong>Memoization hooks</strong> — These functions are used for performance optimization by avoiding recalculating values if their constituent parts haven’t changed: <code>useMemo</code>, <code>useCallback</code>, <code>useId</code>.</p>
+</li>
+<li>
+<p><strong>Library hooks</strong> — These advanced functions are almost exclusively used in larger component libraries that are created to be shared either with the community or internally in a larger organization. These functions are rarely used in smaller or medium-size applications: <code>useDebugValue</code>, <code>useImperativeHandle</code>, <code>useInsertionEffect</code>, and <code>useSyncExternalStore</code>.</p>
+</li>
+</ul>
+<p class="annotate">These <mark>15 hooks</mark> are the built-in “base” hooks that React comes with.(1)</p>
+<ol>
+<li>
+<p>You can build more hooks on top of them, but you can’t build your own base hooks. You can only build hooks that utilize one or more of the existing hooks.</p>
+<p>Note that React might be extended with more built-in hooks in future releases. React 18.0 came with <mark>five new hooks</mark>, and incremental releases after React 18 might come with even more.</p>
+<hr />
+<ul>
+<li>React Quickly, Second Edition by Morten Barklund, Azat Mardan (pg-214)</li>
+</ul>
 </li>
 </ol>
 <hr />
