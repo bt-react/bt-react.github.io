@@ -63,7 +63,16 @@
     
     
     
-  </head>
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -8042,7 +8051,7 @@
 <p>This file and folder structure follows a feature-based approach, making it scalable and maintainable. Each feature (e.g., authentication, dashboard, user profile) has its own folder containing related components, services, store, and routes. Shared resources such as UI components, hooks, and utilities are centralized in the shared/ folder for reuse across the app.</p>
 <p>This organization will help you manage a growing codebase as your application scales.</p>
 <hr />
-<p><img alt="Advanced React by Nadia Makarevich" src="../../../assets/react/advanced-react.jpg" /></p>
+<p><a class="glightbox" href="../../../assets/react/advanced-react.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Advanced React by Nadia Makarevich" src="../../../assets/react/advanced-react.jpg" /></a></p>
 
 
 
@@ -8145,5 +8154,7 @@
       <script src="../../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

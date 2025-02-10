@@ -63,7 +63,16 @@
     
     
     
-  </head>
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -7683,8 +7692,8 @@
 <li>TanStack Query is a <mark>server-state</mark> library, responsible for managing asynchronous operations between your server and client</li>
 <li>Redux, MobX, Zustand, etc. are <mark>client-state</mark> libraries that can be used to store asynchronous data, <a href="" title="Even though; although; notwithstanding">albeit</a> inefficiently when compared to a tool like TanStack Query</li>
 </ul>
-<p><img alt="https://blog.stackademic.com/tanstack-query-vs-redux-the-ultimate-guide-to-api-data-handling-in-react-native-85c13f99ab4f" src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*02z_SHP8HTn_KWCvsxtvtA.png" /></p>
-<p><img alt="https://www.qovery.com/blog/why-we-replaced-redux-by-react-query/" src="https://images.prismic.io/qovery/655341e5531ac2845a252e46_V1-12-.png?auto=format,compress" /></p>
+<p><a class="glightbox" href="https://miro.medium.com/v2/resize:fit:720/format:webp/1*02z_SHP8HTn_KWCvsxtvtA.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="https://blog.stackademic.com/tanstack-query-vs-redux-the-ultimate-guide-to-api-data-handling-in-react-native-85c13f99ab4f" src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*02z_SHP8HTn_KWCvsxtvtA.png" /></a></p>
+<p><a class="glightbox" href="https://images.prismic.io/qovery/655341e5531ac2845a252e46_V1-12-.png?auto=format,compress" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="https://www.qovery.com/blog/why-we-replaced-redux-by-react-query/" src="https://images.prismic.io/qovery/655341e5531ac2845a252e46_V1-12-.png?auto=format,compress" /></a></p>
 <h2 id="client-state-vs-server-state"><a href="https://tkdodo.eu/blog/practical-react-query#client-state-vs-server-state">Client State vs. Server State</a></h2>
 <p>What Apollo gives you is not just the ability to describe which data you want and to fetch that data, it also comes with a cache for that server data. This means that you can just use the same <code>useQuery</code> hook in multiple components, and it will only fetch data once and then subsequently return it from the cache.</p>
 <p>This sounds very familiar with what we, and probably many other teams as well, have mainly been using <code>redux</code> for: Fetch data from the server and make it available everywhere.</p>
@@ -7816,5 +7825,7 @@
       <script src="../../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

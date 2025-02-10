@@ -63,7 +63,16 @@
     
     
     
-  </head>
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -7730,7 +7739,7 @@
 </span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>|-- App.js
 </span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>|-- index.js
 </span></code></pre></div>
-<p><img alt="How the Context API Works" src="https://www.freecodecamp.org/news/content/images/2023/03/image-197.png" /></p>
+<p><a class="glightbox" href="https://www.freecodecamp.org/news/content/images/2023/03/image-197.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="How the Context API Works" src="https://www.freecodecamp.org/news/content/images/2023/03/image-197.png" /></a></p>
 <p>The React Context API allows you to share state or behavior across your React components without having to pass props manually through each level of the component tree. Here's a simple guide on how to use the React Context API:</p>
 <h2 id="step-1-create-a-context"><strong>Step 1</strong>: Create a Context</h2>
 <p>You can create a new context using the <code>createContext</code> function from React.</p>
@@ -7907,5 +7916,7 @@
       <script src="../../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

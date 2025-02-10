@@ -63,7 +63,16 @@
     
     
     
-  </head>
+   <link href="../../../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -7591,8 +7600,8 @@
 
 <p>.....correct me with right question and right answer</p>
 <hr />
-<p><img alt="type:video" src="https://www.youtube.com/embed/NGdUPRFQXYg?si=-z_K-4xuhzSDekVA" /></p>
-<p><img alt="type:video" src="https://www.youtube.com/embed/MBlZ8Wzkbi4?si=vFnarpDnsqfdGj4W" /></p>
+<p><a class="glightbox" href="https://www.youtube.com/embed/NGdUPRFQXYg?si=-z_K-4xuhzSDekVA" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="type:video" src="https://www.youtube.com/embed/NGdUPRFQXYg?si=-z_K-4xuhzSDekVA" /></a></p>
+<p><a class="glightbox" href="https://www.youtube.com/embed/MBlZ8Wzkbi4?si=vFnarpDnsqfdGj4W" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="type:video" src="https://www.youtube.com/embed/MBlZ8Wzkbi4?si=vFnarpDnsqfdGj4W" /></a></p>
 
 
 
@@ -7695,5 +7704,7 @@
       <script src="../../../../../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

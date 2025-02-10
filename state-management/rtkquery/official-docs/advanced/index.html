@@ -63,7 +63,16 @@
     
     
     
-  </head>
+   <link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -7843,7 +7852,7 @@
   <h1>Advanced</h1>
 
 <h2 id="redux-essentials"><a href="https://redux.js.org/tutorials/essentials/part-8-rtk-query-advanced">Redux Essentials</a></h2>
-<p><img alt="Cache Data Subscription Lifetimes" src="https://redux.js.org/assets/images/devtools-cached-requests-79d7905036f9236ebed6c895b78b129d.png" /></p>
+<p><a class="glightbox" href="https://redux.js.org/assets/images/devtools-cached-requests-79d7905036f9236ebed6c895b78b129d.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Cache Data Subscription Lifetimes" src="https://redux.js.org/assets/images/devtools-cached-requests-79d7905036f9236ebed6c895b78b129d.png" /></a></p>
 <h2 id="advanced-cache-updates">Advanced Cache Updates</h2>
 <h3 id="persisting-reactions"><a href="https://redux.js.org/tutorials/essentials/part-8-rtk-query-advanced#persisting-reactions">Persisting Reactions</a></h3>
 <div class="language-jsx highlight"><span class="filename">features/api/apiSlice.ts</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">export</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">apiSlice</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">createApi</span><span class="p">({</span>
@@ -7963,7 +7972,7 @@
 </details>
 <p>As long as 1+ subscribers for the data are still active, the cache entry is kept alive. When the number of subscribers goes to 0 and the cache lifetime timer expires, the cache entry will be removed, and <code>cacheEntryRemoved</code> will resolve.</p>
 <hr />
-<p><img alt="https://redux.js.org/tutorials/essentials/part-8-rtk-query-advanced#fetching-users-manually" src="https://redux.js.org/assets/images/api-slice-contents-62291fe341d9aa651999b46c580fe3df.png" /></p>
+<p><a class="glightbox" href="https://redux.js.org/assets/images/api-slice-contents-62291fe341d9aa651999b46c580fe3df.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="https://redux.js.org/tutorials/essentials/part-8-rtk-query-advanced#fetching-users-manually" src="https://redux.js.org/assets/images/api-slice-contents-62291fe341d9aa651999b46c580fe3df.png" /></a></p>
 <hr />
 <h2 id="alternative-selector-libraries"><a href="https://redux.js.org/usage/deriving-data-selectors#alternative-selector-libraries">Alternative Selector Libraries</a></h2>
 
@@ -8068,5 +8077,7 @@
       <script src="../../../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

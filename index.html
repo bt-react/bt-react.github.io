@@ -59,7 +59,16 @@
     
     
     
-  </head>
+   <link href="assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -7570,6 +7579,33 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#frozen-objects-in-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frozen objects in JavaScript
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navigating-the-react-mastery-journey" class="md-nav__link">
+    <span class="md-ellipsis">
+      Navigating the React mastery journey
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-stack-from-scratch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating a stack from scratch
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#react" class="md-nav__link">
     <span class="md-ellipsis">
       React
@@ -7599,12 +7635,24 @@
 <li><a href="https://daveceddia.com/react-redux-immutability-guide/">React Redux Immutability Guide</a></li>
 <li><a href="https://www.codedaily.io/tutorials/Immutable-Data-with-Immer-and-React-setState">Immutable Data with Immer and React setState</a></li>
 <li><a href="https://immerjs.github.io/immer/resources">Immer Resources</a></li>
+<li><a href="https://calendar.perfplanet.com/2013/diff/">React’s diff algorithm</a></li>
 </ul>
 <hr />
 <ul>
 <li><a href="https://egghead.io/">egghead.io</a></li>
 <li><a href="https://tutsnode.org/">tutsnode.org</a></li>
 </ul>
+<p class="annotate">React is backend agnostic for frontend development.(1)</p>
+<ol>
+<li>
+<p>In other words, you don’t have to rely on a JavaScript-based backend (Node or Deno) to use React. It’s fine to use React with any other backend technology, such as Java, Ruby, Go, or Python.</p>
+<p>React is a UI library, after all. You can integrate it with any backend and any frontend data library (Backbone, Angular, Meteor, etc.).</p>
+<hr />
+<ul>
+<li>React Quickly, Second Edition by Morten Barklund, Azat Mardan (pg-11)</li>
+</ul>
+</li>
+</ol>
 <hr />
 <div class="language-jsx highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">import</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="kr">as</span><span class="w"> </span><span class="nx">msw</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;msw&quot;</span><span class="p">;</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
@@ -7714,9 +7762,150 @@
 </ul>
 </li>
 </ol>
+<details class="success" open="open">
+<summary>Hook Rules</summary>
+<p>If you use a hook, you must obey the two laws of hooks:</p>
+<ul>
+<li>only call hooks at the top level of a component (so no conditional hooks or loops of hooks), &amp;</li>
+<li>only use hooks inside functional components (so no hooks outside a component, in a helper function, or even in a class-based component).</li>
+</ul>
+<hr />
+<ul>
+<li>React Quickly, 2nd Edition</li>
+</ul>
+</details>
+<ul>
+<li>Low-priority state updates with <code>useDeferredValue</code> and <code>useTransition</code></li>
+</ul>
+<hr />
+<h2 id="frozen-objects-in-javascript">Frozen objects in JavaScript</h2>
+<p><mark>Internally</mark>, React uses <code>Object.freeze()</code>, which is a built-in function in JavaScript to make the <code>this.props</code> object immutable. To check whether an object is frozen, you can use the <code>Object.isFrozen()</code> method. For example, you can determine whether this statement will return <code>true</code>:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kd">class</span><span class="w"> </span><span class="nx">Test</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nx">React</span><span class="p">.</span><span class="nx">Component</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="nx">render</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Object</span><span class="p">.</span><span class="nx">isFrozen</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">));</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">React</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;div&quot;</span><span class="p">);</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="p">}</span>
+</span></code></pre></div>
+<p class="annotate">The details of this are pretty complex, but for now, just know that you should never try to edit or add properties inside a component itself. That is something you do in the parent context. (1)</p>
+<ol>
+<li>
+<p>The object of properties can be accessed inside a component using <code>this.props</code>. This object is a frozen (immutable) object, from which you can <mark>only read values</mark>, not set them.</p>
+<hr />
+<ul>
+<li>React Quickly, Second Edition by Morten Barklund, Azat Mardan (pg-46)</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2 id="navigating-the-react-mastery-journey">Navigating the React mastery journey</h2>
+<p><a class="glightbox" href="assets/React-mastery-journey.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Navigation React Master Journey" src="assets/React-mastery-journey.png" /></a></p>
+<p>The tools are sorted into <mark>three main groups</mark>, depending on what they do and where they are used:</p>
+<ul>
+<li><strong>User interface</strong> — Includes things like UI libraries and animation tools</li>
+<li><strong>Architecture</strong> — Includes data management tools, authentication libraries, and many others</li>
+<li><strong>Productivity</strong> — Covers build tools, testing libraries, and more</li>
+</ul>
+<p><a class="glightbox" href="assets/react-ecosystem-1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="React Ecosystem 1" src="assets/react-ecosystem-1.png" /></a>
+<a class="glightbox" href="assets/react-ecosystem-2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="React Ecosystem 2" src="assets/react-ecosystem-2.png" /></a></p>
+<p><a class="glightbox" href="assets/React-mastery-path.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="React Mastery Path" src="assets/React-mastery-path.png" /></a></p>
+<details class="quote">
+<summary>Quote</summary>
+<ul>
+<li>
+<p><strong>Data management</strong> — Redux (and RTK), zustand, Immer, MobX, Jotai, Recoil, Akita, Elf, Rematch, Hookstate, react-easy-state, Unstated, RxJS, Effector, Valtio, Easy Peasy, Kea, storeon, nanostores, PouchDB, Firebase, Supabase, Synergies, Flux, and Fluxible</p>
+</li>
+<li>
+<p><strong>State flow</strong> — XState, Robot, React Stately, Overmind, useStateMachine, Zag, Little State Machine, and React Transition State</p>
+</li>
+<li>
+<p><strong>Remote data</strong> — TanStack Query, SWR, Relay, Apollo Client, React-Fetching-Library, Redux Saga, Appsync, Axios, GraphQL, FeathersJS, Swagger, and GraphQL-Tools</p>
+</li>
+<li>
+<p><strong>Authentication and authorization</strong> — JWT, Firebase Authentication, OAuth2, AWS Amplify, Auth0, Okta, Passport.js, OpenID, AWS Cognito, Keycloak, and React Auth Kit</p>
+</li>
+<li><strong>Accessibility</strong> — React Aria, axe-core, Reakit, and Downshift</li>
+<li><strong>Form management</strong> — Formik, Yup, React Hook Form, React Final Form, and React-JSONSchema</li>
+</ul>
+<hr />
+<p><a class="glightbox" href="assets/React-in-Depth.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="React in Depth by Morten Barklund" src="assets/React-in-Depth.png" width="200" /></a></p>
+</details>
+<hr />
+<h2 id="creating-a-stack-from-scratch">Creating a stack from scratch</h2>
+<p>Choosing the right stack for a React project can be challenging, as many options are available in the ecosystem. In this section, we’ll discuss some of the factors to consider when choosing stack components by looking at some example scenarios and suggesting specific technologies for them.</p>
+<p class="annotate">The most important decision is the foundation layer of your application. This decision is the hardest to change at a later stage in development but of course still doable then, so don’t get too stuck on it. Building on said foundation, you expand with technologies that solve your particular pain points in the easiest way possible.(1)</p>
+<ol>
+<li>
+<p>One crucial balancing act rests at the center of creating a stack for a new project: familiarity matters, but new technologies surpass existing ones. If your team knows TanStack, it doesn’t matter if some other data-fetching library might technically be a better fit for a given new project. Your team will work a lot faster in a library they’re familiar with than in a completely new one. On the other hand, if you don’t challenge yourself, you’ll never evolve, and as technologies go stale or become outdated, you’ll never learn about the new and simpler/better/faster tools replacing them.</p>
+<p>Dancing on this balancing beam is at the center of the role of the team architect who’s creating the technology stack. Where should we stick with what we know, and when should we challenge ourselves? These decisions don’t exist just at the birth of a new project; they pop up continuously. Sometimes, you have to replace a given technology in your stack with a new one despite the growing pains it will inevitably introduce, simply because you have to keep up with the times. Let’s go through some scenarios and see how we can solve them with a good choice of technologies</p>
+</li>
+</ol>
+<details class="tip">
+<summary>SCENARIO: A MEDIUM- SIZE E-COMMERCE PLATFORM</summary>
+<p>You’re tasked with revamping a medium-size e-commerce platform to improve performance, scalability, and user experience. For this kind of project, you want a stack that’s proved itself time and time again, and you want to move fast and build things quickly. One good choice for a project like this one would be what we might call <strong><em>The Popular Stack</em></strong>:</p>
+<ul>
+<li><strong>Next.js</strong> as the foundation</li>
+<li><strong>RTK</strong> as the data management library</li>
+<li><strong>TanStack</strong> as the data-fetching library</li>
+<li><strong>Material UI</strong> with MUI as the styling library</li>
+</ul>
+<p>The Popular Stack offers the familiarity of Next.js for server-side rendering, TanStack for efficient data fetching, RTK for state management, and Material UI for a polished UI. This stack provides the tools needed to enhance the platform’s speed and user interface, ensuring an excellent shopping experience.</p>
+</details>
+<details class="tip">
+<summary>SCENARIO: A PERSONAL PORTFOLIO WEBSITE</summary>
+<p>You’re a solo developer looking to create a personal portfolio website that showcases your skills and projects. For this kind of project, you’re free to play around, but you also want to use the latest and greatest tools out there, both to show off your skills and to stay ahead of the competition. The stack for such a project will always be changing with the times, but one possible candidate is what we’ll call <strong><em>The Indie Stack</em></strong>:</p>
+<ul>
+<li><strong>Vite</strong> at the foundation</li>
+<li><strong>Zustand</strong> as the data management library</li>
+<li><strong>Tailwind</strong> CSS as the styling library</li>
+</ul>
+<p>The Indie Stack is perfect for this scenario. Vite offers rapid development with blazing-fast bundling, zustand simplifies state management, and Tailwind CSS allows for quick and attractive styling. This stack empowers you to showcase your work efficiently and aesthetically.</p>
+</details>
+<details class="tip">
+<summary>SCENARIO: MAINTAINING A LEGACY ENTERPRISE DASHBOARD</summary>
+<p>Your team is responsible for maintaining a legacy enterprise dashboard built using older technologies. The stack for such a project was determined a long time ago, and you just have to play along. Refactoring this to a new stack is nigh on impossible as the project is huge. For now, you’re stuck with <strong><em>The Old School Stack</em></strong>:</p>
+<ul>
+<li><strong>Create React App (CRA)</strong> as the foundation</li>
+<li><strong>Redux</strong> as the data management library</li>
+<li><strong>Axios</strong> as the data-fetching library</li>
+<li><strong>CSS Modules</strong> as the styling library</li>
+</ul>
+<p>The Old School Stack, with CRA for stability, Axios for data fetching, Redux for state management, and CSS Modules for maintainable styling, is still a good choice. It ensures compatibility with existing code while leaving an open door for gradual modernization.</p>
+</details>
+<details class="tip">
+<summary>SCENARIO: A FINANCIAL SERVICES WEB APPLICATION</summary>
+<p>You’re developing a comprehensive web application for a financial services company. For this scenario, you want something that’s trustworthy, secure, and scalable and that won’t ruffle any feathers in senior management. You can’t go wrong with <strong><em>The Enterprise Stack</em></strong>:</p>
+<ul>
+<li><strong>Pure React</strong> plus <strong>TypeScript</strong> as the foundation</li>
+<li><strong>Apollo</strong> as the data-fetching and management library</li>
+<li><strong>Styled-components</strong> as the styling library</li>
+</ul>
+<p>The Enterprise Stack, combining React with TypeScript for strong typing, Apollo for managing complex data fetching and storage, and styled-components for consistent and maintainable styling, ensures robustness and scalability for handling financial transactions securely.</p>
+</details>
+<details class="tip">
+<summary>SCENARIO: RAPID PROTOTYPING OF A COLLABORATIVE TASK MANAGEMENT TOOL</summary>
+<p>Your startup is building a collaborative task management tool, and you need to prototype the core features quickly to attract potential investors and users. For this task, you want something that has a lot of magic built in and can very easily scale up and move fast. You don’t mind if the design looks a bit derivative, as speed and features and making early investors satisfied with the progress are more important than a unique user interface. You should check out <strong><em>The Prototype Stack</em></strong>:</p>
+<ul>
+<li><strong>Remix</strong> as the foundation</li>
+<li><strong>Supabase</strong> as the backend</li>
+<li><strong>Stale-While-Revalidate</strong> (SWR) as the data-fetching library</li>
+<li><strong>Ant Design</strong> as the styling library</li>
+</ul>
+<p>The Prototype Stack, featuring Remix for fast server rendering, Supabase for rapid backend development, SWR for scalable data fetching, and Ant Design for a polished, feature-rich UI, allows you to create a functional prototype swiftly, demonstrating the product’s potential to stakeholders.</p>
+</details>
+<p class="annotate">A technology stack (also known as a solution stack or simply stack) is central to software development, guiding the selection of technologies, frameworks, and tools for a project. (1)</p>
+<ol>
+<li>
+<p>The choice of a React stack components depends on project requirements and familiarity with the technologies, with options ranging from established stacks like The <strong>Popular Stack</strong> for e-commerce platforms to innovative stacks like The <strong>Indie Stack</strong> for personal portfolio websites, each tailored to specific project goals and constraints.</p>
+<hr />
+<ul>
+<li>React in Depth by Morten Barklund, pg-18</li>
+</ul>
+</li>
+</ol>
 <hr />
 <h2 id="react">React</h2>
-<p><img alt="Advanced React by Nadia Makarevich" src="assets/react/advanced-react.jpg" /></p>
+<p><a class="glightbox" href="assets/react/advanced-react.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Advanced React by Nadia Makarevich" src="assets/react/advanced-react.jpg" /></a></p>
 
 
 
@@ -7781,5 +7970,7 @@
       <script src="assets/javascripts/bundle.88dd0f4e.min.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

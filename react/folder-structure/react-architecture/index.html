@@ -63,7 +63,16 @@
     
     
     
-  </head>
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -7780,8 +7789,8 @@
 
   <h1>Architecture</h1>
 
-<p><img alt="React App Architecture" src="https://www.etatvasoft.com/blog/wp-content/uploads/2024/01/React-App-Architecture.jpg" />
-<img alt="Work Flow of React Web Appllication" src="https://www.etatvasoft.com/blog/wp-content/uploads/2024/01/Workflow-of-React-Web-Applications.jpg" /></p>
+<p><a class="glightbox" href="https://www.etatvasoft.com/blog/wp-content/uploads/2024/01/React-App-Architecture.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="React App Architecture" src="https://www.etatvasoft.com/blog/wp-content/uploads/2024/01/React-App-Architecture.jpg" /></a>
+<a class="glightbox" href="https://www.etatvasoft.com/blog/wp-content/uploads/2024/01/Workflow-of-React-Web-Applications.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Work Flow of React Web Appllication" src="https://www.etatvasoft.com/blog/wp-content/uploads/2024/01/Workflow-of-React-Web-Applications.jpg" /></a></p>
 <h2 id="overview">Overview</h2>
 <p>When designing a web application with React, it's crucial to establish a solid architecture that promotes maintainability, scalability, and reusability. Below is an architecture that works well for most medium-to-large-scale React applications. This architecture is modular, separates concerns, and is flexible enough to adapt to changes as your app grows.</p>
 <h3 id="1-folder-structure">1. Folder Structure</h3>
@@ -8068,5 +8077,7 @@
       <script src="../../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

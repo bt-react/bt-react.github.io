@@ -63,7 +63,16 @@
     
     
     
-  </head>
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -7746,7 +7755,7 @@
 
 <h2 id="overview">Overview</h2>
 <p>Error boundaries are React components that catch JavaScript errors anywhere in their child component tree, log those errors, and display a fallback UI. They help prevent the entire app from crashing when an error occurs in a part of the UI.</p>
-<p><img alt="error boundry" src="https://refine.ams3.cdn.digitaloceanspaces.com/blog/2023-11-09-react-error-bounderies/4.jpeg" /></p>
+<p><a class="glightbox" href="https://refine.ams3.cdn.digitaloceanspaces.com/blog/2023-11-09-react-error-bounderies/4.jpeg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="error boundry" src="https://refine.ams3.cdn.digitaloceanspaces.com/blog/2023-11-09-react-error-bounderies/4.jpeg" /></a></p>
 <details class="note" open="open">
 <summary>Note</summary>
 <ul>
@@ -7916,13 +7925,13 @@
 <li><a href="https://blog.stackademic.com/mastering-advanced-error-handling-in-functional-react-components-94fe2a68e96c">Mastering Advanced Error Handling in Functional React Components</a></li>
 </ul>
 <p>Video</p>
-<p><img alt="type:video" src="https://www.youtube.com/embed/_FuDMEgIy7I?si=fJxG0hq-OhwA5sBN" />
-<img alt="type:video" src="https://www.youtube.com/embed/jSMSjINzbYY?si=bCnUJYVTUHUBRB65" /></p>
-<p><img alt="type:video" src="https://www.youtube.com/embed/gVj84413hVg?si=MZiyHkrq-xZwPJHt" />
-<img alt="type:video" src="https://www.youtube.com/embed/s6-f-OJbgtQ?si=OL-9DqU_TuM8EOfi" />
-<img alt="type:video" src="https://www.youtube.com/embed/0LpLxEUephc?si=n2IdZfEB8eY_GYbo" />
-<img alt="type:video" src="https://www.youtube.com/embed/hszc3T0hdvU?si=eBp0aIBbMUZt8q_y" />
-<img alt="type:video" src="https://www.youtube.com/embed/OpHbSHp8PcI?si=SQk6dNaYDFhbmU8f" /></p>
+<p><a class="glightbox" href="https://www.youtube.com/embed/_FuDMEgIy7I?si=fJxG0hq-OhwA5sBN" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="type:video" src="https://www.youtube.com/embed/_FuDMEgIy7I?si=fJxG0hq-OhwA5sBN" /></a>
+<a class="glightbox" href="https://www.youtube.com/embed/jSMSjINzbYY?si=bCnUJYVTUHUBRB65" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="type:video" src="https://www.youtube.com/embed/jSMSjINzbYY?si=bCnUJYVTUHUBRB65" /></a></p>
+<p><a class="glightbox" href="https://www.youtube.com/embed/gVj84413hVg?si=MZiyHkrq-xZwPJHt" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="type:video" src="https://www.youtube.com/embed/gVj84413hVg?si=MZiyHkrq-xZwPJHt" /></a>
+<a class="glightbox" href="https://www.youtube.com/embed/s6-f-OJbgtQ?si=OL-9DqU_TuM8EOfi" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="type:video" src="https://www.youtube.com/embed/s6-f-OJbgtQ?si=OL-9DqU_TuM8EOfi" /></a>
+<a class="glightbox" href="https://www.youtube.com/embed/0LpLxEUephc?si=n2IdZfEB8eY_GYbo" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="type:video" src="https://www.youtube.com/embed/0LpLxEUephc?si=n2IdZfEB8eY_GYbo" /></a>
+<a class="glightbox" href="https://www.youtube.com/embed/hszc3T0hdvU?si=eBp0aIBbMUZt8q_y" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="type:video" src="https://www.youtube.com/embed/hszc3T0hdvU?si=eBp0aIBbMUZt8q_y" /></a>
+<a class="glightbox" href="https://www.youtube.com/embed/OpHbSHp8PcI?si=SQk6dNaYDFhbmU8f" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="type:video" src="https://www.youtube.com/embed/OpHbSHp8PcI?si=SQk6dNaYDFhbmU8f" /></a></p>
 
 
 
@@ -8025,5 +8034,7 @@
       <script src="../../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

@@ -63,7 +63,16 @@
     
     
     
-  </head>
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -7695,8 +7704,8 @@
   <h1>Storybook</h1>
 
 <h2 id="overview">Overview</h2>
-<p><img alt="Storybook Process" src="https://stackify.com/wp-content/uploads/2023/05/image-10.png" /></p>
-<p><img alt="Storybook Design" src="https://stackify.com/wp-content/uploads/2023/05/image-11.png" /></p>
+<p><a class="glightbox" href="https://stackify.com/wp-content/uploads/2023/05/image-10.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Storybook Process" src="https://stackify.com/wp-content/uploads/2023/05/image-10.png" /></a></p>
+<p><a class="glightbox" href="https://stackify.com/wp-content/uploads/2023/05/image-11.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Storybook Design" src="https://stackify.com/wp-content/uploads/2023/05/image-11.png" /></a></p>
 <hr />
 <p>Astro is a modern static site generator designed for building fast, optimized websites. It allows developers to create websites using their favorite frameworks, like React, Vue, or Svelte, while focusing on performance and reducing client-side JavaScript.</p>
 <details class="note" open="open">
@@ -7908,5 +7917,7 @@
       <script src="../../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>
