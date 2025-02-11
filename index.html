@@ -7786,6 +7786,14 @@
 </span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">React</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;div&quot;</span><span class="p">);</span>
 </span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">  </span><span class="p">}</span>
 </span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="p">}</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="c1">//</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="kd">const</span><span class="w"> </span><span class="nx">Dashboard</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">({</span><span class="w"> </span><span class="nx">title</span><span class="p">,</span><span class="w"> </span><span class="nx">name</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;typeof: &quot;</span><span class="p">,</span><span class="w"> </span><span class="nb">Object</span><span class="p">.</span><span class="nx">isFrozen</span><span class="p">(</span><span class="nx">title</span><span class="p">),</span><span class="w"> </span><span class="nx">title</span><span class="p">,</span><span class="w"> </span><span class="nx">name</span><span class="p">);</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="o">&lt;&gt;</span><span class="nx">Dashboard</span><span class="o">&lt;</span><span class="err">/&gt;;</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="p">};</span>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">Dashboard</span><span class="p">;</span>
 </span></code></pre></div>
 <p class="annotate">The details of this are pretty complex, but for now, just know that you should never try to edit or add properties inside a component itself. That is something you do in the parent context. (1)</p>
 <ol>
@@ -7849,7 +7857,7 @@
 <li><strong>TanStack</strong> as the data-fetching library</li>
 <li><strong>Material UI</strong> with MUI as the styling library</li>
 </ul>
-<p>The Popular Stack offers the familiarity of Next.js for server-side rendering, TanStack for efficient data fetching, RTK for state management, and Material UI for a polished UI. This stack provides the tools needed to enhance the platform’s speed and user interface, ensuring an excellent shopping experience.</p>
+<p><mark>The Popular Stack</mark> offers the familiarity of Next.js for server-side rendering, TanStack for efficient data fetching, RTK for state management, and Material UI for a polished UI. This stack provides the tools needed to enhance the platform’s speed and user interface, ensuring an excellent shopping experience.</p>
 </details>
 <details class="tip">
 <summary>SCENARIO: A PERSONAL PORTFOLIO WEBSITE</summary>
@@ -7859,7 +7867,7 @@
 <li><strong>Zustand</strong> as the data management library</li>
 <li><strong>Tailwind</strong> CSS as the styling library</li>
 </ul>
-<p>The Indie Stack is perfect for this scenario. Vite offers rapid development with blazing-fast bundling, zustand simplifies state management, and Tailwind CSS allows for quick and attractive styling. This stack empowers you to showcase your work efficiently and aesthetically.</p>
+<p><mark>The Indie Stack</mark> is perfect for this scenario. Vite offers rapid development with blazing-fast bundling, zustand simplifies state management, and Tailwind CSS allows for quick and attractive styling. This stack empowers you to showcase your work efficiently and aesthetically.</p>
 </details>
 <details class="tip">
 <summary>SCENARIO: MAINTAINING A LEGACY ENTERPRISE DASHBOARD</summary>
@@ -7870,7 +7878,7 @@
 <li><strong>Axios</strong> as the data-fetching library</li>
 <li><strong>CSS Modules</strong> as the styling library</li>
 </ul>
-<p>The Old School Stack, with CRA for stability, Axios for data fetching, Redux for state management, and CSS Modules for maintainable styling, is still a good choice. It ensures compatibility with existing code while leaving an open door for gradual modernization.</p>
+<p><mark>The Old School Stack</mark>, with CRA for stability, Axios for data fetching, Redux for state management, and CSS Modules for maintainable styling, is still a good choice. It ensures compatibility with existing code while leaving an open door for gradual modernization.</p>
 </details>
 <details class="tip">
 <summary>SCENARIO: A FINANCIAL SERVICES WEB APPLICATION</summary>
@@ -7880,7 +7888,7 @@
 <li><strong>Apollo</strong> as the data-fetching and management library</li>
 <li><strong>Styled-components</strong> as the styling library</li>
 </ul>
-<p>The Enterprise Stack, combining React with TypeScript for strong typing, Apollo for managing complex data fetching and storage, and styled-components for consistent and maintainable styling, ensures robustness and scalability for handling financial transactions securely.</p>
+<p><mark>The Enterprise Stack</mark>, combining React with TypeScript for strong typing, Apollo for managing complex data fetching and storage, and styled-components for consistent and maintainable styling, ensures robustness and scalability for handling financial transactions securely.</p>
 </details>
 <details class="tip">
 <summary>SCENARIO: RAPID PROTOTYPING OF A COLLABORATIVE TASK MANAGEMENT TOOL</summary>
@@ -7891,7 +7899,7 @@
 <li><strong>Stale-While-Revalidate</strong> (SWR) as the data-fetching library</li>
 <li><strong>Ant Design</strong> as the styling library</li>
 </ul>
-<p>The Prototype Stack, featuring Remix for fast server rendering, Supabase for rapid backend development, SWR for scalable data fetching, and Ant Design for a polished, feature-rich UI, allows you to create a functional prototype swiftly, demonstrating the product’s potential to stakeholders.</p>
+<p><mark>The Prototype Stack</mark>, featuring Remix for fast server rendering, Supabase for rapid backend development, SWR for scalable data fetching, and Ant Design for a polished, feature-rich UI, allows you to create a functional prototype swiftly, demonstrating the product’s potential to stakeholders.</p>
 </details>
 <p class="annotate">A technology stack (also known as a solution stack or simply stack) is central to software development, guiding the selection of technologies, frameworks, and tools for a project. (1)</p>
 <ol>
