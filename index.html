@@ -7570,11 +7570,35 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#effects" class="md-nav__link">
+    <span class="md-ellipsis">
+      Effects
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#hooks" class="md-nav__link">
     <span class="md-ellipsis">
       Hooks
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Hooks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#handling-events-in-react" class="md-nav__link">
+    <span class="md-ellipsis">
+      Handling events in React
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -7734,6 +7758,67 @@
 <p>React Key Concepts (2022 Packt Publishing) by Maximilian Schwarzmüller</p>
 </li>
 </ol>
+<details class="question" open="open">
+<summary>What kind of information do you store in component state?</summary>
+<p>In general, any state used in a web application belongs to one of <strong>three categories</strong>:</p>
+<ul>
+<li><strong>Application data</strong></li>
+<li><strong>UI state</strong></li>
+<li><strong>Form data</strong></li>
+</ul>
+<p class="annotate">This isn’t a rule or an artifact of React in particular, but it’s a consequence of how stateful applications operate. Different types of data are stored in different ways.(1)</p>
+<ol>
+<li>
+<p><strong>Application Data</strong></p>
+<p>Application data is most often stored on a <mark>global level</mark> in your application.</p>
+<p>A better solution is often to create a data store in a component that is persistent in your application so that when data is loaded once, it remains through the application.</p>
+<p>We’ll see different ways of doing this in the future involving built-in React functionality (using React Context)</p>
+<p><strong>UI STATE</strong></p>
+<p>UI state values are most often kept as <mark>local</mark> as possible. The information about whether the menu is open or not is only of relevance inside the menu component, so you can easily store this as <mark>local state</mark> inside this component only.</p>
+<p><strong>FORM DATA</strong></p>
+<p>While the user is interacting with a form, entering data, moving from one form field to the next, the current state of the form is often kept in <mark>local state</mark> in the component that covers all the form fields.</p>
+<hr />
+<ul>
+<li>React Quickly 2nd Edition, pg-141</li>
+</ul>
+</li>
+</ol>
+</details>
+<hr />
+<h2 id="effects">Effects</h2>
+<p><a class="glightbox" href="assets/index/running-effect.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Running Effect" src="assets/index/running-effect.png" /></a></p>
+<p><strong>Remembering a value without re-rendering with <code>useRef</code></strong></p>
+<p><code>useRef</code> is both one of the simplest hooks in React and also one of the <mark>least understood</mark> hooks.</p>
+<p class="annotate">It’s a hook with a <strong><em>passive state</em></strong>, which means the hook can contain state, but setting or updating the state <mark>doesn’t cause a re-render</mark>.(1)</p>
+<ol>
+<li>
+<p><code>useRef</code> is used for a number of purposes, including remembering values between renders and serving as a reference to DOM elements used in the render.</p>
+<hr />
+<p><strong>1. Passive State Values</strong></p>
+<p>You can use the <code>useRef</code> hook to remember some value that is relevant between renders of the component but that doesn’t directly affect the outcome of the component.</p>
+<p>To <mark>instantiate</mark> a <code>useRef</code> hook, you simply call the hook and store it in a variable. You can optionally pass an initial value to the hook as well.</p>
+<p>To read or update the current value of a <code>useRef</code> hook, you access the .current` property on the hook return value.</p>
+<p><strong>2. References To DOM Elements</strong></p>
+<p>The other use case for <code>useRef</code> is, as mentioned, <mark>to get references to DOM elements</mark>.</p>
+<p><a class="glightbox" href="assets/index/react-useRef-1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="UseRef 1" src="assets/index/react-useRef-1.png" /></a>
+<a class="glightbox" href="assets/index/react-useRef-2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="useRef 2" src="assets/index/react-useRef-2.png" /></a></p>
+<hr />
+<ul>
+<li>React quickly, 2nd Edition - pg 216</li>
+</ul>
+</li>
+</ol>
+<p><strong>Understanding rendering</strong></p>
+<p>A functional component will render for one of <mark>three reasons</mark>:</p>
+<ul>
+<li>A functional component will render for one of three reasons:</li>
+<li>The parent component re-rendered.</li>
+<li>The component uses stateful hooks, which have updated.</li>
+</ul>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Rendering on mount
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>Rendering on parent render
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>Rendering on state update
+</span></code></pre></div>
 <hr />
 <h2 id="hooks">Hooks</h2>
 <p>At the time of writing, there are 15 built-in hooks in React (as of <code>React 18</code>), which we’ll cover briefly, grouped by their functionality:</p>
@@ -7777,23 +7862,39 @@
 <ul>
 <li>Low-priority state updates with <code>useDeferredValue</code> and <code>useTransition</code></li>
 </ul>
+<p><a class="glightbox" href="assets/index/React-Hooks-Reference.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="React Hooks Reference" src="assets/index/React-Hooks-Reference.png" /></a></p>
+<hr />
+<h3 id="handling-events-in-react">Handling events in React</h3>
+<p>Events are the way that users interact with a JavaScript web application. Events can be caused by mouse movement or clicking, touch interface clicks and drags, keyboard button presses, scrolling, copying and pasting, as well as indirect interactions such as focusing and unfocusing elements or the entire application.</p>
+<p>There are <strong>two ways</strong> to handle events in React:</p>
+<ul>
+<li>You can use React to manage your event listener.</li>
+<li>You can manually add and remove your event listener directly on a DOM node.</li>
+</ul>
+<p><strong>THE SYNTHETIC EVENT API</strong></p>
+<p>React’s synthetic events have an API that’s based on the standard API model as efined in the HTML specification.</p>
+<p class="annotate">For instance, all events have a <code>.type</code> property and a <code>.target</code> property. They also all have <code>.preventDefault()</code> and <code>.stopPropagation()</code> methods.(1)</p>
+<ol>
+<li>React Quicklly, 2nd Edition, pg-241</li>
+</ol>
+<p><strong>Event phases and propagation</strong></p>
 <hr />
 <h2 id="frozen-objects-in-javascript">Frozen objects in JavaScript</h2>
 <p><mark>Internally</mark>, React uses <code>Object.freeze()</code>, which is a built-in function in JavaScript to make the <code>this.props</code> object immutable. To check whether an object is frozen, you can use the <code>Object.isFrozen()</code> method. For example, you can determine whether this statement will return <code>true</code>:</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kd">class</span><span class="w"> </span><span class="nx">Test</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nx">React</span><span class="p">.</span><span class="nx">Component</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="nx">render</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Object</span><span class="p">.</span><span class="nx">isFrozen</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">));</span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">React</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;div&quot;</span><span class="p">);</span>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">  </span><span class="p">}</span>
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="p">}</span>
-</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>
-</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="c1">//</span>
-</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="kd">const</span><span class="w"> </span><span class="nx">Dashboard</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">({</span><span class="w"> </span><span class="nx">title</span><span class="p">,</span><span class="w"> </span><span class="nx">name</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;typeof: &quot;</span><span class="p">,</span><span class="w"> </span><span class="nb">Object</span><span class="p">.</span><span class="nx">isFrozen</span><span class="p">(</span><span class="nx">title</span><span class="p">),</span><span class="w"> </span><span class="nx">title</span><span class="p">,</span><span class="w"> </span><span class="nx">name</span><span class="p">);</span>
-</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="o">&lt;&gt;</span><span class="nx">Dashboard</span><span class="o">&lt;</span><span class="err">/&gt;;</span>
-</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="p">};</span>
-</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>
-</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">Dashboard</span><span class="p">;</span>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kd">class</span><span class="w"> </span><span class="nx">Test</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nx">React</span><span class="p">.</span><span class="nx">Component</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span><span class="nx">render</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Object</span><span class="p">.</span><span class="nx">isFrozen</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">));</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">React</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;div&quot;</span><span class="p">);</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="p">}</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="c1">//</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="kd">const</span><span class="w"> </span><span class="nx">Dashboard</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">({</span><span class="w"> </span><span class="nx">title</span><span class="p">,</span><span class="w"> </span><span class="nx">name</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;typeof: &quot;</span><span class="p">,</span><span class="w"> </span><span class="nb">Object</span><span class="p">.</span><span class="nx">isFrozen</span><span class="p">(</span><span class="nx">title</span><span class="p">),</span><span class="w"> </span><span class="nx">title</span><span class="p">,</span><span class="w"> </span><span class="nx">name</span><span class="p">);</span>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="o">&lt;&gt;</span><span class="nx">Dashboard</span><span class="o">&lt;</span><span class="err">/&gt;;</span>
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="p">};</span>
+</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>
+</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">Dashboard</span><span class="p">;</span>
 </span></code></pre></div>
 <p class="annotate">The details of this are pretty complex, but for now, just know that you should never try to edit or add properties inside a component itself. That is something you do in the parent context. (1)</p>
 <ol>
@@ -7807,16 +7908,16 @@
 </ol>
 <hr />
 <h2 id="navigating-the-react-mastery-journey">Navigating the React mastery journey</h2>
-<p><a class="glightbox" href="assets/React-mastery-journey.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Navigation React Master Journey" src="assets/React-mastery-journey.png" /></a></p>
+<p><a class="glightbox" href="assets/index/React-mastery-journey.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Navigation React Master Journey" src="assets/index/React-mastery-journey.png" /></a></p>
 <p>The tools are sorted into <mark>three main groups</mark>, depending on what they do and where they are used:</p>
 <ul>
 <li><strong>User interface</strong> — Includes things like UI libraries and animation tools</li>
 <li><strong>Architecture</strong> — Includes data management tools, authentication libraries, and many others</li>
 <li><strong>Productivity</strong> — Covers build tools, testing libraries, and more</li>
 </ul>
-<p><a class="glightbox" href="assets/react-ecosystem-1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="React Ecosystem 1" src="assets/react-ecosystem-1.png" /></a>
-<a class="glightbox" href="assets/react-ecosystem-2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="React Ecosystem 2" src="assets/react-ecosystem-2.png" /></a></p>
-<p><a class="glightbox" href="assets/React-mastery-path.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="React Mastery Path" src="assets/React-mastery-path.png" /></a></p>
+<p><a class="glightbox" href="assets/index/react-ecosystem-1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="React Ecosystem 1" src="assets/index/react-ecosystem-1.png" /></a>
+<a class="glightbox" href="assets/index/react-ecosystem-2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="React Ecosystem 2" src="assets/index/react-ecosystem-2.png" /></a></p>
+<p><a class="glightbox" href="assets/index/React-mastery-path.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="React Mastery Path" src="assets/index/React-mastery-path.png" /></a></p>
 <details class="quote">
 <summary>Quote</summary>
 <ul>
@@ -7836,7 +7937,7 @@
 <li><strong>Form management</strong> — Formik, Yup, React Hook Form, React Final Form, and React-JSONSchema</li>
 </ul>
 <hr />
-<p><a class="glightbox" href="assets/React-in-Depth.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="React in Depth by Morten Barklund" src="assets/React-in-Depth.png" width="200" /></a></p>
+<p><a class="glightbox" href="./assets/React-in-Depth.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="React in Depth by Morten Barklund" src="./assets/React-in-Depth.png" width="200" /></a></p>
 </details>
 <hr />
 <h2 id="creating-a-stack-from-scratch">Creating a stack from scratch</h2>
