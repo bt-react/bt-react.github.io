@@ -636,6 +636,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../prettier/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Prettier
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../eslint/intro/" class="md-nav__link">
         
   
@@ -662,6 +683,27 @@
   
   <span class="md-ellipsis">
     Husky
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../husky/lint-staged/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lint Staged
   </span>
   
 
@@ -782,6 +824,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#configuration-file-precedence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration File Precedence
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -810,6 +861,15 @@
   <a href="#nonstandard-rules-with-prettier-configuration" class="md-nav__link">
     <span class="md-ellipsis">
       Nonstandard rules with Prettier configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration File
     </span>
   </a>
   
@@ -7769,6 +7829,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#configuration-file-precedence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration File Precedence
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -7797,6 +7866,15 @@
   <a href="#nonstandard-rules-with-prettier-configuration" class="md-nav__link">
     <span class="md-ellipsis">
       Nonstandard rules with Prettier configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration File
     </span>
   </a>
   
@@ -7901,8 +7979,10 @@
 <li>Stylistic rules, such as requiring newlines at the end of a file</li>
 </ul>
 <p>Code linting is becoming more and more popular, to the point where it’s almost standard in most projects these days. The primary linter tool used today is <a href="#">ESLint</a>.</p>
+<hr />
 <h4 id="problems-solved-by-eslint">Problems solved by ESLint</h4>
 <p>Suppose that you work on a large team, and to make things smoother, you create a coding style guideline that you want all your developers to follow. ESLint is one of the first tools for JavaScript that allows you to codify such a style in enforceable rules, which will be applied automatically to all the code for every developer, regardless of their setup.</p>
+<hr />
 <h4 id="eslint-configurations">ESLint configurations</h4>
 <p>ESLint consists of more than <mark>300 rules</mark>, and you can specify how you want each rule to be enforced in your project. You can also specify the severity of violating a rule.</p>
 <ul>
@@ -7920,6 +8000,18 @@
 <li>Enforce the rules in your editor and your build.</li>
 </ol>
 </details>
+<hr />
+<h4 id="configuration-file-precedence"><a href="https://eslint.org/docs/latest/use/configure/configuration-files#configuration-file-precedence">Configuration File Precedence</a></h4>
+<p>If you have multiple ESLint configuration files, ESLint prioritizes JavaScript files over TypeScript files. The order of precedence is as follows:</p>
+<ol>
+<li><code>eslint.config.js</code></li>
+<li><code>eslint.config.mjs</code></li>
+<li><code>eslint.config.cjs</code></li>
+<li><code>eslint.config.ts</code></li>
+<li><code>eslint.config.mts</code></li>
+<li><code>eslint.config.cts</code></li>
+</ol>
+<hr />
 <p><strong>Step 1</strong>: Initialize eslint configuration</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>npm<span class="w"> </span>init<span class="w"> </span>@eslint/config
 </span></code></pre></div>
@@ -7982,6 +8074,7 @@
 <h4 id="problems-solved-by-prettier">Problems solved by Prettier</h4>
 <p>First, know that <strong>Prettier is an opinionated ruleset</strong>. The makers of Prettier have an opin- ion about how code should be formatted, and they aren’t shy about it. How code should be formatted is constantly up for discussion, of course, <mark>but at its base, Prettier is an opinion</mark>, so your team doesn’t need to have one.</p>
 <p>The number of problems that Prettier solves is impossible to list, but one of its best features is that you never have to worry about formatting your files again. Often, you have stylistic design choices to make as a developer.</p>
+<hr />
 <h4 id="nonstandard-rules-with-prettier-configuration"><a href="https://prettier.io/docs/configuration.html">Nonstandard rules with Prettier configuration</a></h4>
 <p>One of the most common ways is to format the object as JSON and store it in a file named <code>.prettierrc</code> or <code>.prettierrc.json</code> located at the root of your project.</p>
 <div class="admonition quote">
@@ -8028,6 +8121,53 @@
 <li>Enforce formatting in your editor.</li>
 <li>Enforce formatting on code commits.</li>
 </ol>
+<hr />
+<h4 id="configuration-file"><a href="https://prettier.io/docs/configuration.html">Configuration File</a></h4>
+<div class="language-json highlight"><span class="filename">JSON</span><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="p">{</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">  </span><span class="nt">&quot;trailingComma&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;es5&quot;</span><span class="p">,</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">  </span><span class="nt">&quot;tabWidth&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">  </span><span class="nt">&quot;semi&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">  </span><span class="nt">&quot;singleQuote&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="p">}</span>
+</span></code></pre></div>
+<div class="language-js highlight"><span class="filename">JS (ES Modules)</span><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1">// prettier.config.js, .prettierrc.js, prettier.config.mjs, or .prettierrc.mjs</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="cm">/**</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="cm"> * @see https://prettier.io/docs/en/configuration.html</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="cm"> * @type {import(&quot;prettier&quot;).Config}</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="cm"> */</span>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="kd">const</span><span class="w"> </span><span class="nx">config</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="w">  </span><span class="nx">trailingComma</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;es5&quot;</span><span class="p">,</span>
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="w">  </span><span class="nx">tabWidth</span><span class="o">:</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span>
+</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="w">  </span><span class="nx">semi</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="w">  </span><span class="nx">singleQuote</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="p">};</span>
+</span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>
+</span><span id="__span-8-14"><a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">config</span><span class="p">;</span>
+</span></code></pre></div>
+<details class="tip" open="open">
+<summary>Summary of the Options</summary>
+<ul>
+<li><strong>JSON-based</strong>: <code>.prettierrc</code>, <code>.prettierrc.json</code>, <code>.prettierrc.json5</code></li>
+<li><strong>YAML-based</strong>: <code>.prettierrc.yml</code>, <code>.prettierrc.yaml</code></li>
+<li><strong>JavaScript-based</strong>: <code>.prettierrc.js</code>, <code>prettier.config.js</code></li>
+<li><strong>TypeScript-based</strong>: <code>.prettierrc.ts</code>, <code>prettier.config.ts</code></li>
+<li><strong>ES Module</strong>: <code>.prettierrc.mjs</code>, <code>prettier.config.mjs</code></li>
+<li><strong>CommonJS</strong>: <code>.prettierrc.cjs</code>, <code>prettier.config.cjs</code></li>
+<li><strong>TOML-based</strong>: <code>.prettierrc.toml</code></li>
+</ul>
+</details>
+<details class="question" open="open">
+<summary>Which Should You Choose?</summary>
+<ul>
+<li><strong>For most projects</strong>: <code>.prettierrc</code> (JSON or YAML) is often the best choice. It’s simple, widely adopted, and doesn't require extra logic.</li>
+<li><strong>For JavaScript-heavy projects</strong>: If you need flexibility and more complex configuration, go with <code>.prettierrc.js</code> or <code>prettier.config.js</code>.</li>
+<li><strong>For TypeScript projects</strong>: Choose <code>.prettierrc.ts</code> if you want type safety and TypeScript integration.</li>
+<li><strong>For ES Module-based projects</strong>: Use <code>.prettierrc.mjs</code> if you're using ES Modules and want to use export default.</li>
+<li><strong>For Node.js CommonJS projects</strong>: Use <code>.prettierrc.cjs</code>.</li>
+</ul>
+<p>In general, unless you have specific reasons to use JavaScript, TypeScript, or ES Modules in your configuration, sticking with the .prettierrc file (either JSON or YAML) is a safe and widely accepted choice.</p>
+</details>
 <hr />
 <h2 id="reference">Reference</h2>
 <ul>

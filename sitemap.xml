@@ -909,11 +909,19 @@
          <lastmod>2025-02-12</lastmod>
     </url>
     <url>
+         <loc>https://bt-react.github.io/tools/prettier/</loc>
+         <lastmod>2025-02-12</lastmod>
+    </url>
+    <url>
          <loc>https://bt-react.github.io/tools/eslint/intro/</loc>
          <lastmod>2025-02-12</lastmod>
     </url>
     <url>
          <loc>https://bt-react.github.io/tools/husky/intro/</loc>
+         <lastmod>2025-02-12</lastmod>
+    </url>
+    <url>
+         <loc>https://bt-react.github.io/tools/husky/lint-staged/</loc>
          <lastmod>2025-02-12</lastmod>
     </url>
     <url>
