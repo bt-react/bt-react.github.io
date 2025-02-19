@@ -901,11 +901,19 @@
          <lastmod>2025-02-19</lastmod>
     </url>
     <url>
+         <loc>https://bt-react.github.io/tools/animations/</loc>
+         <lastmod>2025-02-19</lastmod>
+    </url>
+    <url>
          <loc>https://bt-react.github.io/tools/barrel/</loc>
          <lastmod>2025-02-19</lastmod>
     </url>
     <url>
          <loc>https://bt-react.github.io/tools/code-maintenance/</loc>
+         <lastmod>2025-02-19</lastmod>
+    </url>
+    <url>
+         <loc>https://bt-react.github.io/tools/fsm/</loc>
          <lastmod>2025-02-19</lastmod>
     </url>
     <url>
@@ -918,6 +926,10 @@
     </url>
     <url>
          <loc>https://bt-react.github.io/tools/prettier/</loc>
+         <lastmod>2025-02-19</lastmod>
+    </url>
+    <url>
+         <loc>https://bt-react.github.io/tools/react-ecosystem/</loc>
          <lastmod>2025-02-19</lastmod>
     </url>
     <url>
